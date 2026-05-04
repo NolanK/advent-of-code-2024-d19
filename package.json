@@ -1,0 +1,17 @@
+{
+    "name": "advent-of-code-2024-d19",
+    "version": "1.0.0",
+    "description": "Advent of Code 2024 Day 19",
+    "author": "Nolan Kennedy",
+    "type": "commonjs",
+    "scripts": {
+        "start": "tsx index.ts",
+        "lint": "tsc --noEmit"
+
+    },
+    "devDependencies": {
+        "@types/node": "^25.6.0",
+        "tsx": "^4.21.0",
+        "typescript": "^6.0.3"
+    }
+}
