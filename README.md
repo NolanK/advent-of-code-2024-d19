@@ -1,4 +1,4 @@
-# Advent of Code 2024, Day 19
+# [Advent of Code 2024, Day 19](https://adventofcode.com/2024/day/19)
 Here's my attempt at this coding challenge. I was able to solve part 1 but could not complete part 2.
 
 I realized early on that it was a DP (Dynamic Programming) problem and so I tried approaching it in that framing, using a recursive algorithm with cached results. Many iterations involved simply trying and tweaking either a top down approach (starting with all towel combinations then removing one at each iteration), or a bottom up approach (starting with no towels and adding new combinations at each iteration).
