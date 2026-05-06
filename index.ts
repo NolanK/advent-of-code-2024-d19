@@ -3,7 +3,8 @@ import fs from "fs";
 // import { getValidDesignsV2 as getValidDesigns } from "./v2";
 // import { getValidDesignsV3 as getValidDesigns } from "./v3";
 // import { getValidDesignsV4 as getValidDesigns } from "./v4_p1_solution";
-import { getValidDesignsV5 as getValidDesigns } from "./current";
+// import { getValidDesignsV5 as getValidDesigns } from "./v5";
+import { getValidDesignsV6 as getValidDesigns } from "./current";
 
 // load input
 const input = fs.readFileSync("input.txt", "utf8");

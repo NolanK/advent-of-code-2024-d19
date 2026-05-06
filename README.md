@@ -55,7 +55,7 @@ Realizing after a while that there is more we can do to prune / early exit in th
 This early exit / pruning strategy now means the bottom up approach finishes and we get an answer!
 
 
-### [Current Version](/current.ts)
+### [Version 5](/v5.ts)
 Now that we have an answer to part 1. We can try part 2 which is to find *all* the valid combinations for each design. This exposed my solution to the problems and bugs that would cause part 2 to be left unfinshed.
 - trying to continue the recursion instead of returning on first valid design lead to aglorithm being slow again
 - discovering through debugging and testing that the caching is doing nothing in our bottom up approach. 
@@ -63,11 +63,10 @@ Now that we have an answer to part 1. We can try part 2 which is to find *all* t
 
 Without an appropriate cache state, this "DP approach" provides no performance benefits and the algorithm's time complexity remains too large to finish. For the sake of completeness, we simply exit early in this final attempt just to finish the run, but the count for each valid design will be incorrect.
 
+### [Final Version](/current.ts)
+After thinking more about the problem, I thought of a better way to cache the values. Instead of caching the state of "invalid combinations that have been attempted", we can flip it and cache the "number of design combinations that are valid from this point in the design". Doing this led to an algorithm which finished quickly and provided the correct answer for part 2. 
+
 ## Summary
-This was a pretty challenging problem given my little exposure to Dynamic Programming. I iterated on it for quite some time and was able to finish part one, without realizing until part 2 that I wasn't using DP caching properly anyway and had solved part 1 using a simple recursion + branch pruning technique.
-
-I think designing a new caching strategy would probably improve performance enough to complete part 2, but I am left unsure as to what exactly to cache on. We probably still need to use the bottom up approach, and cache on something like the "current design positions up to position n", or something related to the current position in the design. 
-
-An optimal DP solution to this probably lies somewhere using the Pascal's Triangle rule (this seems to be a typical DP problem space after doing some research).
+I was able to find the solution to both parts 1 and 2 after changing my approach on what to cache on for the DP algorithm to work properly. I was focused before on trying to recurse through the ordered list of possible towels, instead of recursing through the design itself and keeping track of the index into the design. In the end this lead to a far simpler implementation and got to the correct solution fairly quickly. 
 
 This was a fun problem - thank you!
