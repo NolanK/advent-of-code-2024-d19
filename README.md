@@ -11,7 +11,7 @@ Only the final / current version runs (the others hang due to time complexity), 
 
 
 ### Update (2026/05/06)
-I was able to eventually solve this challenge by reworking the approach and changing what to cache on. The [final version]([/Final-Version](#final-version)) shows this new approach, successfully completing parts 1 and 2. 
+I was able to eventually solve this challenge by reworking the approach and changing what to cache on. The [final version](#final-version) shows this new approach, successfully completing parts 1 and 2. 
 
 
 ## How to Run 
