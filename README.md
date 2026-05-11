@@ -10,6 +10,9 @@ I took snapshots of my progess so I could document my thought process along the 
 Only the final / current version runs (the others hang due to time complexity), but testing the old versions are still possible by commenting out the approproriate version [here](/index.ts).
 
 
+### Update (2026/05/06)
+I was able to eventually solve this challenge by reworking the approach and changing what to cache on. The [final version]([/Final-Version](#final-version)) shows this new approach, successfully completing parts 1 and 2. 
+
 
 ## How to Run 
 You can run the latest version of my attempt by running the tyepscript / node program:
